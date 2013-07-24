@@ -8,6 +8,7 @@ class PostsController < ApplicationController
   # Contains a form for creating a post
   def new
     @post = Post.new
+    @post.comments.build
   end
 
   # Actually creates the record in the database and redirects
@@ -46,6 +47,8 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body, :image)
+    params.require(:post).permit(
+      :title, :body, :image, comments_attributes: [:body]
+    )
   end
 end

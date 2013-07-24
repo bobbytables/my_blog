@@ -1,3 +1,7 @@
 <%= form.input :title, placeholder: 'Post Title' %>
 <%= form.input :body, label: 'Yo bod' %>
 <%= form.input :image %>
+
+<%= form.simple_fields_for :comments do |ff| %>
+  <%= ff.input :body %>
+<% end %>
