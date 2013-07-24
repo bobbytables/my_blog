@@ -6,7 +6,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
 gem 'rails', '4.0.0'
 gem 'sass-rails', '~> 4.0.0'
-gem 'sqlite3'
+gem 'pg'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem "devise", "~> 3.0.0"
