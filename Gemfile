@@ -14,7 +14,11 @@ gem "table_cloth", "~> 0.4.0"
 gem "twitter-bootstrap-rails"
 gem 'carrierwave'
 gem 'simple_form'
-gem 'rails_12factor', group: :production
+
+group :production do
+  gem 'rails_12factor'
+  gem 'table_cloth'
+end
 
 group :doc do
   gem 'sdoc', :require => false
