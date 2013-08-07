@@ -17,6 +17,7 @@ gem 'simple_form'
 
 group :production do
   gem 'rails_12factor'
+  gem 'table_cloth'
 end
 
 group :doc do
